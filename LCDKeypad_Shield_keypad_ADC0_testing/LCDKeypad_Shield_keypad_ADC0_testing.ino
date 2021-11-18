@@ -46,12 +46,15 @@ void setup() {
   Serial.begin(115200);
   Serial.println("lcd testing begin");
 
-  lcd.begin(16, 2);
-  lcd.print("xiaolaba, line1");
-  lcd.setCursor(0,1);
-  lcd.print("line2");
-
   backlight_on();
+ 
+  lcd.begin(16, 2);
+  lcd.print("xiaolaba");
+  lcd.setCursor(0,1);
+  lcd.print("ADC0,test keypad");
+  delay(3000);
+
+
   
 }
 
